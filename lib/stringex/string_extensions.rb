@@ -15,6 +15,7 @@ module Stringex
     # This is roughly equivalent to ActionView's <tt>textilize_without_paragraph</tt>
     # except that it makes RedCloth do all the work instead of just gsubbing the return
     # from RedCloth.
+=begin
     def to_html(lite_mode = false)
       if defined?(RedCloth)
         if lite_mode
@@ -31,6 +32,8 @@ module Stringex
         self
       end
     end
+=end
+
 
     # Create a URI-friendly representation of the string. This is used internally by
     # acts_as_url[link:classes/Stringex/ActsAsUrl/ClassMethods.html#M000012]
